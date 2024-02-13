@@ -1,9 +1,12 @@
 import React from 'react'
 import { ButtonGroup, Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import logo from '../assets/logo.png';
+import backgroundImage from "../assets/bg.jpg"; // Import your background image
 const Registration = () => {
   return (
-    <div>
+    <div   
+    className="bg-cover min-h-screen relative"
+    style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="flex justify-center items-center h-screen text-white">
       <div className="border border-gray-500 p-8 rounded-lg bg-gray-800">
       <img src={logo} alt={logo} width="200" height="50" className="bg-transparent border-none pb-[1rem]" />
