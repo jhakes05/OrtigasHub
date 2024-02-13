@@ -4,6 +4,7 @@ import Footer from './Components/Footer'
 import Landing from './Components/Landing'
 import Login from './Components/Login'
 import Nav from './Components/Nav'
+import Registration from './Components/Registration'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     {/* <Login/> */}
     <Footer/>
     {/* <About/> */}
+    {/* <Registration/> */}
  </>
   )
 }

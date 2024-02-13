@@ -3,7 +3,7 @@ import { Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, Mo
 import { Link, Box, Flex, Spacer } from "@chakra-ui/react";
 import logo from '../assets/logo.png';
 import { useState } from "react";
-
+import register from '../Components/Registration';
 const Nav = () => {
   // State to manage modal open/close
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Nav = () => {
   const onClose = () => setIsOpen(false);
 
   return (
-    <Flex className="bg-gray-800 p-1 flex items-center text-white justify-end">
+    <Flex className="bg-gray-800 p-1 flex items-center text-white">
       <Link to='/' className="pl-5">
         {/* Using the logo imported from assets */}
         <img src={logo} alt={logo} width="200" height="50" className="bg-transparent border-none" />
@@ -53,7 +53,7 @@ const Nav = () => {
                     <FormLabel className="text-white">Password</FormLabel>
                     <Input type="password" style={{background: "white"}} />
                     <ButtonGroup className="pt-5">
-                      <Button colorScheme="blue">Sign Up</Button>
+                      <Button src={register} colorScheme="blue">Sign Up</Button>
                       <Button colorScheme="blue">Sign In</Button>
                     </ButtonGroup>
                   </FormControl>

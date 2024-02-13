@@ -60,9 +60,9 @@ const Footer = () => {
               <h4 className="font-bold text-sm">Contact Us</h4>
               <div className="flex space-x-2">
                 {/* Social Media Icons (replace alt with your own icon components) */}
-                <img src="/path-to-your-facebook-icon" alt="Facebook" />
-                <img src="/path-to-your-instagram-icon" alt="Instagram" />
-                <img src="/path-to-your-gmail-icon" alt="Gmail" />
+                <img src="/path-to-your-facebook-icon" href="https://facebook.com" alt="Facebook" />
+                <img src="/path-to-your-instagram-icon" href="https://instagram.com" alt="Instagram" />
+                <img src="/path-to-your-gmail-icon" href="https://mail.google.com/" alt="Gmail" />
               </div>
             </div>
             {/* About Section */}
